@@ -19,13 +19,21 @@
         height: 1px;
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
         background-color: var(--orange);
+        transition: all 0.2s cubic-bezier(0.78, 0, 0.22, 1);
+        transform: translate(-50%, -50%);
     }
 
     &:hover {
+        color: var(--cream);
+
         &::after {
-            height: 100%;
+            height: 110%;
+            z-index: -1;
+            bottom: 50%;
+            width: 110%;
+            transform: translate(-50%, 50%);
         }
     }
 }
