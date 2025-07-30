@@ -1,1 +1,26 @@
 
+:root {
+    --orange: #fb5600;
+    --white: #fff;
+    --black: #000;
+    --cream: #F7EAD1;
+    --choco: #412120;
+    --blue: #0700EE;
+    --slight-blue: #DFDEFF;
+    --green: #59FF26;
+}
+
+[data-framer-name="orange"] p > a.framer-text {
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--orange);
+    }
+}
+
