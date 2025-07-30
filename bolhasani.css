@@ -22,5 +22,11 @@
         left: 0;
         background-color: var(--orange);
     }
+
+    &:hover {
+        &::after {
+            height: 100%;
+        }
+    }
 }
 
