@@ -23,6 +23,11 @@
         background-color: var(--orange);
         transition: all 0.2s cubic-bezier(0.78, 0, 0.22, 1);
         transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    &:not(::after) {
+        z-index: 2;
     }
 
     &:hover {
@@ -30,7 +35,6 @@
 
         &::after {
             height: 110%;
-            z-index: -1;
             bottom: 50%;
             width: 110%;
             transform: translate(-50%, 50%);
