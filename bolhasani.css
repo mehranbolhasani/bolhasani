@@ -10,6 +10,8 @@
     --green: #59FF26;
 }
 
+@supports (selector(:hover)) {
+
 [data-framer-name="orange"] [data-framer-name="main-about"] p > a.framer-text {
     position: relative;
 
@@ -182,3 +184,4 @@
     }
 }
 
+}
