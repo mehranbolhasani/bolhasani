@@ -26,8 +26,23 @@
         z-index: 1;
     }
 
-    &:not(::after) {
-        z-index: 2;
+    ::nth-child(1) {
+        &::before {
+            content: 'Nauticare';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            color: var(--orange);
+            opacity: 0;
+            transition: all 0.2s cubic-bezier(0.78, 0, 0.22, 1);
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
     }
 
     &:hover {
